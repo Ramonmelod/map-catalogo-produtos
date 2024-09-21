@@ -25,4 +25,15 @@ public class EstoqueProdutos {
         }
     }
 
+    public double CalcularTotalEstoque() {
+        double valorTotalEstoque = 0d;
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Produto p : estoqueProdutosMap.values()) {
+                valorTotalEstoque = p.getPreco() * p.getQuantidade();
+            }
+
+        }
+        return valorTotalEstoque;
+    }
+
 }

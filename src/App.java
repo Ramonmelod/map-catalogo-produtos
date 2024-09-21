@@ -6,6 +6,7 @@ public class App {
         estoqueProdutos.AdicionarProduto(155654L, "valvula", 45.5, 12);
         estoqueProdutos.AdicionarProduto(568712L, "colher", 1.5, 5);
         estoqueProdutos.ExibirProdutos();
+        System.out.println("Valor total estoque: " + estoqueProdutos.CalcularTotalEstoque());
 
     }
 }
