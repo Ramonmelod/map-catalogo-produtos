@@ -7,6 +7,7 @@ public class App {
         estoqueProdutos.AdicionarProduto(568712L, "colher", 1.5, 5);
         estoqueProdutos.ExibirProdutos();
         System.out.println("Valor total estoque: " + estoqueProdutos.CalcularTotalEstoque());
+        System.out.println("Produto mais caro: " + estoqueProdutos.ExibirProdutoMaisCaro());
 
     }
 }

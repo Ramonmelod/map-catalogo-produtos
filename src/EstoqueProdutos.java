@@ -36,4 +36,16 @@ public class EstoqueProdutos {
         return valorTotalEstoque;
     }
 
+    public double ExibirProdutoMaisCaro() {
+        double produtoMaisCaro = 0d;
+        if (!estoqueProdutosMap.isEmpty()) {
+            for (Produto p : estoqueProdutosMap.values()) {
+                if (p.getPreco() > produtoMaisCaro) {
+                    produtoMaisCaro = p.getPreco();
+                }
+            }
+        }
+        return produtoMaisCaro;
+    }
+
 }
